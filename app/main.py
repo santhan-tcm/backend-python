@@ -21,7 +21,7 @@ app = FastAPI(title="ISO 20022 Validation API")
 # CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["*","https://front-end-iso.vercel.app/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
